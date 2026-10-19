@@ -1,0 +1,76 @@
+{% extends "base_taller.html" %}
+{% block title %}Mi Panel - Empleado{% endblock %}
+{% block content %}
+<div class="stats">
+    <div class="stat-card">
+        <h3>Ordenes asignadas</h3>
+        <div class="number">{{ ordenes|length }}</div>
+    </div>
+    <div class="stat-card">
+        <h3>Trabajos por aceptar</h3>
+        <div class="number">{{ asignadas|length }}</div>
+    </div>
+</div>
+
+<div class="section-title">Mis datos</div>
+<div class="card">
+    <p><strong>{{ empleado.nombre }} {{ empleado.apellido }}</strong></p>
+    <p class="muted-sm">Especialidad: {{ empleado.especialidad|default:"General" }}</p>
+</div>
+
+<div class="section-title">Trabajos asignados por el admin</div>
+<table>
+    <thead>
+        <tr>
+            <th>Cliente</th>
+            <th>Vehiculo</th>
+            <th>Contacto</th>
+            <th>Fecha</th>
+            <th>Accion</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for s in asignadas %}
+        <tr>
+            <td><strong>{{ s.nombre }} {{ s.apellido }}</strong></td>
+            <td><span class="badge badge-blue">{{ s.marca }}</span> {{ s.modelo }}<br><small class="muted">{{ s.color }} &middot; {{ s.matricula }}</small></td>
+            <td>{{ s.contacto|default:"&mdash;" }}</td>
+            <td>{{ s.fecha_creacion|date:"d/m/Y" }}</td>
+            <td>
+                <form method="post" action="{% url 'taller:aceptar_solicitud' s.id %}" class="form-actions-row">
+                    {% csrf_token %}
+                    <input type="text" name="tiempo_estimado" required placeholder="Tiempo est. (ej: 2 h)" class="inline-input">
+                    <button type="submit" class="btn btn-green">Aceptar trabajo</button>
+                </form>
+            </td>
+        </tr>
+        {% empty %}
+        <tr><td colspan="5" class="empty">No tienes trabajos por aceptar.</td></tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<div class="section-title">Mis ordenes asignadas</div>
+<table>
+    <thead>
+        <tr>
+            <th>Cliente</th>
+            <th>Vehiculo</th>
+            <th>Tiempo est.</th>
+            <th>Fecha</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for o in ordenes %}
+        <tr>
+            <td><strong>{{ o.cliente.nombre }} {{ o.cliente.apellido }}</strong><br><small class="muted">{{ o.cliente.contacto }}</small></td>
+            <td><span class="badge badge-blue">{{ o.vehiculo.marca }}</span> {{ o.vehiculo.modelo }}<br><small class="muted">{{ o.vehiculo.matricula }}</small></td>
+            <td>{{ o.tiempo_estimado|default:"&mdash;" }}</td>
+            <td>{{ o.fecha_creacion|date:"d/m/Y" }}</td>
+        </tr>
+        {% empty %}
+        <tr><td colspan="4" class="empty">No tienes ordenes asignadas.</td></tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

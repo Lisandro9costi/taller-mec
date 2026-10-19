@@ -1,0 +1,51 @@
+{% extends "base_taller.html" %}
+{% block title %}Taller Mecanico{% endblock %}
+{% block content %}
+<div class="section-title">Clientes del taller</div>
+
+<div class="form-nuevo">
+    <div class="form-nuevo-header">
+        <h3>+ Nuevo cliente</h3>
+    </div>
+    <div class="form-nuevo-body">
+        <form method="post" action="{% url 'taller:crear_cliente' %}">
+            {% csrf_token %}
+            <div class="grid-2">
+                <div class="field">
+                    <label>Nombre</label>
+                    <input type="text" name="nombre" placeholder="Nombre" required>
+                </div>
+                <div class="field">
+                    <label>Apellido</label>
+                    <input type="text" name="apellido" placeholder="Apellido" required>
+                </div>
+                <div class="field">
+                    <label>DNI</label>
+                    <input type="text" name="dni" placeholder="Ej. 12345678" required>
+                </div>
+                <div class="field">
+                    <label>Contacto</label>
+                    <input type="text" name="contacto" placeholder="Telefono o email">
+                </div>
+            </div>
+            <div class="field">
+                <label>Direccion</label>
+                <input type="text" name="direccion" placeholder="Direccion completa">
+            </div>
+            <button type="submit" class="btn-submit">Crear cliente</button>
+        </form>
+    </div>
+</div>
+
+{% for c in clientes %}
+<a href="{% url 'taller:panel_cliente' c.id %}" class="cliente-card">
+    <div class="cliente-info">
+        <h3>{{ c.nombre }} {{ c.apellido }}</h3>
+        <p>DNI: {{ c.dni }} &middot; {{ c.contacto|default:"Sin contacto" }} &middot; {{ c.direccion|default:"Sin direccion" }}</p>
+    </div>
+    <span class="cliente-arrow">&#8250;</span>
+</a>
+{% empty %}
+<div class="empty">No hay clientes registrados. Crea uno arriba.</div>
+{% endfor %}
+{% endblock %}

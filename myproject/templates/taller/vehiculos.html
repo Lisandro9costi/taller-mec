@@ -1,0 +1,29 @@
+{% extends "base_taller.html" %}
+{% block title %}Vehículos - Taller Mecánico{% endblock %}
+{% block content %}
+<div class="section-title">Vehículos</div>
+<table>
+    <thead>
+        <tr>
+            <th>Matrícula</th>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Color</th>
+            <th>Propietario</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for v in vehiculos %}
+        <tr>
+            <td><strong>{{ v.matricula }}</strong></td>
+            <td><span class="badge badge-blue">{{ v.marca }}</span></td>
+            <td>{{ v.modelo }}</td>
+            <td>{{ v.color }}</td>
+            <td>{{ v.cliente.nombre }} {{ v.cliente.apellido }}</td>
+        </tr>
+        {% empty %}
+        <tr><td colspan="5" class="empty">No hay vehículos registrados.</td></tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Iniciar Sesion</title>
+    <style>
+        :root {
+            --navy-deep: #101a5c;
+            --navy: #1a237e;
+            --indigo: #3949ab;
+            --blue: #1565c0;
+            --amber: #fdd835;
+            --amber-deep: #f9a825;
+            --muted: #64748b;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, Tahoma, Geneva, Verdana, sans-serif;
+            background:
+                radial-gradient(1000px 520px at 12% 0%, rgba(253,216,53,0.18), transparent 60%),
+                radial-gradient(900px 500px at 92% 100%, rgba(21,101,192,0.4), transparent 62%),
+                linear-gradient(140deg, var(--navy-deep) 0%, var(--navy) 45%, var(--blue) 100%);
+            background-attachment: fixed;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 28px 20px;
+        }
+
+        .login-card {
+            width: 380px;
+            max-width: 100%;
+            background: rgba(255,255,255,0.97);
+            border: 1px solid rgba(255,255,255,0.6);
+            border-radius: 22px;
+            padding: 40px 38px 32px;
+            box-shadow: 0 28px 70px rgba(6,12,48,0.45);
+            animation: rise 0.5s ease-out both;
+        }
+
+        @keyframes rise {
+            from { opacity: 0; transform: translateY(18px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .login-icon {
+            width: 78px;
+            height: 78px;
+            margin: 0 auto 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            border-radius: 22px;
+            background: linear-gradient(135deg, #fff176 0%, var(--amber) 55%, var(--amber-deep) 100%);
+            box-shadow: 0 12px 26px rgba(249,168,37,0.45);
+        }
+
+        .login-card h1 {
+            color: var(--navy);
+            font-size: 23px;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 6px;
+        }
+
+        .login-card h1 span {
+            background: linear-gradient(135deg, var(--amber-deep) 0%, var(--amber) 60%, #fff176 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .login-card .subtitle {
+            color: var(--muted);
+            text-align: center;
+            margin-bottom: 26px;
+            font-size: 14px;
+        }
+
+        .login-card label {
+            display: block;
+            color: #475569;
+            font-size: 11.5px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 6px;
+        }
+
+        .login-card input[type="text"],
+        .login-card input[type="password"] {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e4e8f6;
+            border-radius: 11px;
+            font-size: 14px;
+            font-family: inherit;
+            color: #1e293b;
+            outline: none;
+            background: #fbfcff;
+            transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+            margin-bottom: 18px;
+        }
+
+        .login-card input[type="text"]:focus,
+        .login-card input[type="password"]:focus {
+            border-color: var(--indigo);
+            background: #fff;
+            box-shadow: 0 0 0 4px rgba(57,73,171,0.14);
+        }
+
+        .login-card button {
+            width: 100%;
+            padding: 13px;
+            background: linear-gradient(135deg, #ffdf5d 0%, var(--amber) 45%, var(--amber-deep) 100%);
+            color: var(--navy-deep);
+            border: 1px solid rgba(249,168,37,0.5);
+            border-radius: 12px;
+            font-size: 15px;
+            font-weight: 800;
+            font-family: inherit;
+            cursor: pointer;
+            box-shadow: 0 8px 20px rgba(249,168,37,0.38);
+            transition: transform 0.15s, box-shadow 0.25s, filter 0.2s;
+        }
+
+        .login-card button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 14px 28px rgba(249,168,37,0.48);
+            filter: brightness(1.03);
+        }
+
+        .login-card button:active { transform: translateY(0) scale(0.99); }
+
+        .login-card button:focus-visible {
+            outline: 3px solid rgba(57,73,171,0.5);
+            outline-offset: 3px;
+        }
+
+        .login-card .footer {
+            text-align: center;
+            margin-top: 22px;
+            padding-top: 20px;
+            border-top: 1px solid #eef1f9;
+        }
+
+        .login-card .footer a {
+            display: block;
+            padding: 11px;
+            border-radius: 11px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 14px;
+            color: #fff;
+            background: linear-gradient(135deg, var(--green-bright) 0%, var(--green) 100%);
+            box-shadow: 0 6px 16px rgba(46,125,50,0.35);
+            transition: transform 0.15s, box-shadow 0.25s, filter 0.2s;
+        }
+
+        .login-card .footer a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 24px rgba(46,125,50,0.42);
+            filter: brightness(1.08);
+        }
+
+        .msg-error {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+            background: #fdecea;
+            color: #b71c1c;
+            border: 1px solid #ef9a9a;
+            border-left: 5px solid #c62828;
+            padding: 12px 16px;
+            border-radius: 11px;
+            margin-bottom: 20px;
+            font-size: 13.5px;
+            font-weight: 600;
+        }
+
+        @media (max-width: 480px) {
+            .login-card { padding: 32px 26px 26px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="login-card">
+        <div class="login-icon">&#9881;</div>
+        <h1><span>Taller</span> Mecanico</h1>
+        <p class="subtitle">Panel de administracion</p>
+        {% if messages %}
+        <div class="msg-error">
+            {% for m in messages %}{{ m }}{% endfor %}
+        </div>
+        {% endif %}
+        <form method="post">
+            {% csrf_token %}
+            <label for="username">Usuario</label>
+            <input type="text" id="username" name="username" placeholder="Ingresa tu usuario" required>
+
+            <label for="password">Contrasena</label>
+            <input type="password" id="password" name="password" placeholder="Ingresa tu contrasena" required>
+
+            <button type="submit">Iniciar Sesion</button>
+        </form>
+        <div class="footer">
+            <a href="{% url 'taller:clientes_lista' %}">Ir al Taller</a>
+        </div>
+    </div>
+</body>
+</html>

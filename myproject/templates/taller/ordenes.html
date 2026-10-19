@@ -1,0 +1,29 @@
+{% extends "base_taller.html" %}
+{% block title %}Ordenes - Taller Mecanico{% endblock %}
+{% block content %}
+<div class="section-title">Ordenes de trabajo</div>
+<table>
+    <thead>
+        <tr>
+            <th>Cliente</th>
+            <th>Vehiculo</th>
+            <th>Empleado</th>
+            <th>Tiempo est.</th>
+            <th>Fecha</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for o in ordenes %}
+        <tr>
+            <td><strong>{{ o.cliente.nombre }} {{ o.cliente.apellido }}</strong><br><small class="muted">{{ o.cliente.contacto }}</small></td>
+            <td><span class="badge badge-blue">{{ o.vehiculo.marca }}</span> {{ o.vehiculo.modelo }}<br><small class="muted">{{ o.vehiculo.matricula }}</small></td>
+            <td><span class="badge badge-yellow">{{ o.empleado.nombre|default:"&mdash;" }}</span></td>
+            <td>{{ o.tiempo_estimado|default:"&mdash;" }}</td>
+            <td>{{ o.fecha_creacion|date:"d/m/Y" }}</td>
+        </tr>
+        {% empty %}
+        <tr><td colspan="5" class="empty">No hay ordenes registradas.</td></tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

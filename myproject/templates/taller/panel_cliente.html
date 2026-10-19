@@ -1,0 +1,154 @@
+{% extends "base_taller.html" %}
+{% block title %}{{ cliente.nombre }} {{ cliente.apellido }} - Panel{% endblock %}
+{% block content %}
+<a href="{% url 'taller:clientes_lista' %}" class="back-link">&#8249; Volver a clientes</a>
+
+<div class="stats">
+    <div class="stat-card">
+        <h3>Vehiculos registrados</h3>
+        <div class="number">{{ vehiculos|length }}</div>
+    </div>
+    <div class="stat-card">
+        <h3>Ordenes</h3>
+        <div class="number">{{ ordenes|length }}</div>
+    </div>
+</div>
+
+{% if solicitudes_pendientes > 0 %}
+<div class="alert-pending">
+    &#9888; Tienes una solicitud pendiente o asignada. Debes esperar a que sea aceptada o rechazada antes de enviar otra.
+</div>
+{% endif %}
+
+<div class="section-title">Datos del cliente</div>
+<div class="card">
+    <p><strong>{{ cliente.nombre }} {{ cliente.apellido }}</strong></p>
+    <p class="muted-sm">
+        DNI: {{ cliente.dni|default:"&mdash;" }} &middot; Direccion: {{ cliente.direccion|default:"&mdash;" }} &middot; Contacto: {{ cliente.contacto|default:"&mdash;" }}
+    </p>
+</div>
+
+<div class="section-title">Mis vehiculos</div>
+<table>
+    <thead>
+        <tr>
+            <th>Matricula</th>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Color</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for v in vehiculos %}
+        <tr>
+            <td><strong>{{ v.matricula }}</strong></td>
+            <td><span class="badge badge-blue">{{ v.marca }}</span></td>
+            <td>{{ v.modelo }}</td>
+            <td>{{ v.color }}</td>
+        </tr>
+        {% empty %}
+        <tr><td colspan="4" class="empty">No hay vehiculos registrados.</td></tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<div class="stats">
+    <div class="form-card">
+        <div class="form-card-header vehiculo">
+            <div class="icon">&#128663;</div>
+            <div>
+                <h3>Agregar vehiculo</h3>
+                <p>Registra un nuevo vehiculo</p>
+            </div>
+        </div>
+        <div class="form-card-body">
+            <form method="post" action="{% url 'taller:agregar_vehiculo' cliente.id %}">
+                {% csrf_token %}
+                <div class="field">
+                    <label>Matricula</label>
+                    <input type="text" name="matricula" placeholder="Ej. ABC123" required>
+                </div>
+                <div class="field">
+                    <label>Marca</label>
+                    <input type="text" name="marca" placeholder="Ej. Toyota" required>
+                </div>
+                <div class="field">
+                    <label>Modelo</label>
+                    <input type="text" name="modelo" placeholder="Ej. Corolla" required>
+                </div>
+                <div class="field">
+                    <label>Color</label>
+                    <input type="text" name="color" placeholder="Ej. Rojo" required>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn">Guardar vehiculo</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="form-card">
+        <div class="form-card-header solicitud">
+            <div class="icon">&#128203;</div>
+            <div>
+                <h3>Enviar solicitud al taller</h3>
+                <p>Pide un trabajo para tu vehiculo</p>
+            </div>
+        </div>
+        <div class="form-card-body">
+            {% if solicitudes_pendientes > 0 %}
+            <p class="note-center">
+                Ya tienes una solicitud pendiente.<br>Espera a que sea procesada.
+            </p>
+            {% else %}
+            <form method="post" action="{% url 'taller:enviar_solicitud' cliente.id %}">
+                {% csrf_token %}
+                <div class="field">
+                    <label>Matricula</label>
+                    <input type="text" name="matricula" placeholder="Ej. ABC123" required>
+                </div>
+                <div class="field">
+                    <label>Marca</label>
+                    <input type="text" name="marca" placeholder="Ej. Ford" required>
+                </div>
+                <div class="field">
+                    <label>Modelo</label>
+                    <input type="text" name="modelo" placeholder="Ej. Fiesta" required>
+                </div>
+                <div class="field">
+                    <label>Color</label>
+                    <input type="text" name="color" placeholder="Ej. Azul" required>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn">Enviar solicitud</button>
+                </div>
+            </form>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<div class="section-title">Mis ordenes de trabajo</div>
+<table>
+    <thead>
+        <tr>
+            <th>Vehiculo</th>
+            <th>Empleado</th>
+            <th>Tiempo est.</th>
+            <th>Fecha</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for o in ordenes %}
+        <tr>
+            <td><span class="badge badge-blue">{{ o.vehiculo.marca }}</span> {{ o.vehiculo.modelo }}<br><small class="muted">{{ o.vehiculo.matricula }}</small></td>
+            <td><span class="badge badge-yellow">{{ o.empleado.nombre|default:"—" }}</span></td>
+            <td>{{ o.tiempo_estimado|default:"—" }}</td>
+            <td>{{ o.fecha_creacion|date:"d/m/Y" }}</td>
+        </tr>
+        {% empty %}
+        <tr><td colspan="4" class="empty">No hay ordenes registradas.</td></tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

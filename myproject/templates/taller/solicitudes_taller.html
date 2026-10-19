@@ -1,0 +1,52 @@
+{% extends "base_taller.html" %}
+{% block title %}Solicitudes al Taller - Taller Mecanico{% endblock %}
+{% block content %}
+<div class="section-title">Solicitudes de clientes al taller</div>
+<table>
+    <thead>
+        <tr>
+            <th>Cliente</th>
+            <th>Vehiculo</th>
+            <th>Estado</th>
+            <th>Empleado</th>
+            <th>Contacto</th>
+            <th>Fecha</th>
+            <th>Accion</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for s in solicitudes %}
+        <tr>
+            <td><strong>{{ s.nombre }} {{ s.apellido }}</strong><br><small class="muted">{{ s.username.username }}</small></td>
+            <td><span class="badge badge-blue">{{ s.marca }}</span> {{ s.modelo }}<br><small class="muted">{{ s.color }} &middot; {{ s.matricula }}</small></td>
+            <td>
+                {% if s.estado == "pendiente" %}<span class="badge badge-yellow">Pendiente</span>
+                {% elif s.estado == "asignada" %}<span class="badge badge-blue">Asignada</span>
+                {% else %}<span class="badge badge-green">Aceptada</span>{% endif %}
+            </td>
+            <td>{{ s.empleado_asignado|default:"&mdash;" }}</td>
+            <td>{{ s.contacto|default:"&mdash;" }}</td>
+            <td>{{ s.fecha_creacion|date:"d/m/Y" }}</td>
+            <td>
+                {% if s.estado == "pendiente" %}
+                <form method="post" action="{% url 'taller:asignar_solicitud' s.id %}" class="form-actions-row">
+                    {% csrf_token %}
+                    <select name="empleado_id" required class="inline-select">
+                        <option value="">Empleado&hellip;</option>
+                        {% for e in empleados %}
+                        <option value="{{ e.id }}">{{ e.nombre }} {{ e.apellido }} ({{ e.username }})</option>
+                        {% endfor %}
+                    </select>
+                    <button type="submit" class="btn btn-blue">Asignar</button>
+                </form>
+                {% else %}
+                <small class="muted">Tiempo: {{ s.tiempo_estimado|default:"&mdash;" }}</small>
+                {% endif %}
+            </td>
+        </tr>
+        {% empty %}
+        <tr><td colspan="7" class="empty">No hay solicitudes al taller.</td></tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

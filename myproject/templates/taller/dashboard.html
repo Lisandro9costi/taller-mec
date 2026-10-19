@@ -1,0 +1,38 @@
+{% extends "base_taller.html" %}
+{% block title %}Dashboard - Taller Mecanico{% endblock %}
+{% block content %}
+<div class="stats">
+    <div class="stat-card">
+        <h3>Ordenes activas</h3>
+        <div class="number">{{ ordenes|length }}</div>
+    </div>
+    <div class="stat-card">
+        <h3>Clientes</h3>
+        <div class="number">{{ clientes|length }}</div>
+    </div>
+    <div class="stat-card">
+        <h3>Empleados</h3>
+        <div class="number">{{ empleados|length }}</div>
+    </div>
+</div>
+
+<div class="section-title">Ordenes de trabajo recientes</div>
+{% for o in ordenes %}
+<div class="card card-row">
+    <div class="grow">
+        <strong>{{ o.cliente.nombre }} {{ o.cliente.apellido }}</strong>
+        <div class="muted-sm">{{ o.cliente.dni }} &middot; {{ o.cliente.contacto }}</div>
+    </div>
+    <div class="grow">
+        <span class="badge badge-blue">{{ o.vehiculo.marca }} {{ o.vehiculo.modelo }}</span>
+        <div class="muted-sm">{{ o.vehiculo.color }} &middot; {{ o.vehiculo.matricula }}</div>
+    </div>
+    <div class="end">
+        <span class="badge badge-yellow">{{ o.empleado.nombre|default:"Sin asignar" }}</span>
+        <div class="muted-sm" style="margin-top:7px;">{{ o.tiempo_estimado|default:"&mdash;" }}</div>
+    </div>
+</div>
+{% empty %}
+<div class="empty">No hay ordenes registradas.</div>
+{% endfor %}
+{% endblock %}

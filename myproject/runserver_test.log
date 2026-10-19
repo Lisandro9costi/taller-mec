@@ -1,0 +1,716 @@
+Watching for file changes with StatReloader
+[03/Aug/2026 10:14:06] "GET / HTTP/1.1" 200 3798
+C:\codigos\test\Django\myproject\taller\views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+August 03, 2026 - 10:02:57
+Django version 6.0.7, using settings 'myproject.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+Watching for file changes with StatReloader
+C:\codigos\test\Django\myproject\taller\views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+August 03, 2026 - 10:18:22
+Django version 6.0.7, using settings 'myproject.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+Watching for file changes with StatReloader
+C:\codigos\test\Django\myproject\myproject\views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+August 03, 2026 - 10:18:30
+Django version 6.0.7, using settings 'myproject.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+Watching for file changes with StatReloader
+C:\codigos\test\Django\myproject\taller\urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+August 03, 2026 - 10:18:34
+Django version 6.0.7, using settings 'myproject.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+Watching for file changes with StatReloader
+[03/Aug/2026 10:19:42] "GET / HTTP/1.1" 200 3798
+[03/Aug/2026 10:19:44] "GET / HTTP/1.1" 200 3798
+[03/Aug/2026 10:19:54] "GET / HTTP/1.1" 200 3798
+[03/Aug/2026 10:20:08] "GET /registro/ HTTP/1.1" 200 5753
+[03/Aug/2026 10:21:04] "GET / HTTP/1.1" 200 3798
+[03/Aug/2026 10:21:05] "GET /taller/ HTTP/1.1" 302 0
+[03/Aug/2026 10:21:05] "GET / HTTP/1.1" 200 3798
+[03/Aug/2026 10:21:06] "GET /taller/ HTTP/1.1" 302 0
+[03/Aug/2026 10:21:06] "GET / HTTP/1.1" 200 3798
+[03/Aug/2026 10:21:08] "GET /taller/ HTTP/1.1" 302 0
+[03/Aug/2026 10:21:08] "GET / HTTP/1.1" 200 3798
+[03/Aug/2026 10:21:09] "GET /taller/ HTTP/1.1" 302 0
+[03/Aug/2026 10:21:09] "GET / HTTP/1.1" 200 3798
+[03/Aug/2026 10:21:10] "GET /taller/ HTTP/1.1" 302 0
+[03/Aug/2026 10:21:10] "GET / HTTP/1.1" 200 3798
+[03/Aug/2026 10:21:11] "GET /registro/ HTTP/1.1" 200 5753
+[03/Aug/2026 10:22:14] "POST /registro/ HTTP/1.1" 302 0
+[03/Aug/2026 10:22:14] "GET / HTTP/1.1" 200 4023
+[03/Aug/2026 10:22:57] "POST / HTTP/1.1" 302 0
+[03/Aug/2026 10:22:57] "GET /taller/panel-cliente/ HTTP/1.1" 200 5714
+[03/Aug/2026 10:23:58] "GET /taller/panel-cliente/ HTTP/1.1" 200 5714
+[03/Aug/2026 10:25:25] "GET /logout/ HTTP/1.1" 302 0
+[03/Aug/2026 10:25:25] "GET / HTTP/1.1" 200 3798
+[03/Aug/2026 10:25:27] "GET /registro/ HTTP/1.1" 200 5753
+[03/Aug/2026 10:25:40] "POST / HTTP/1.1" 302 0
+[03/Aug/2026 10:25:40] "GET /taller/ HTTP/1.1" 200 5248
+[03/Aug/2026 10:25:43] "GET /taller/clientes/ HTTP/1.1" 200 5333
+[03/Aug/2026 10:25:57] "GET /taller/vehiculos/ HTTP/1.1" 200 5176
+[03/Aug/2026 10:25:58] "GET /taller/ordenes/ HTTP/1.1" 200 5184
+[03/Aug/2026 10:25:59] "GET /taller/solicitudes/ HTTP/1.1" 200 5134
+[03/Aug/2026 10:26:00] "GET /taller/empleados/ HTTP/1.1" 200 5157
+[03/Aug/2026 10:26:02] "GET /taller/clientes/ HTTP/1.1" 200 5333
+[03/Aug/2026 10:26:02] "GET /taller/vehiculos/ HTTP/1.1" 200 5176
+[03/Aug/2026 10:26:03] "GET /taller/ HTTP/1.1" 200 5248
+[03/Aug/2026 10:26:05] "GET /logout/ HTTP/1.1" 302 0
+[03/Aug/2026 10:26:05] "GET / HTTP/1.1" 200 3798
+[03/Aug/2026 10:26:07] "GET /registro/ HTTP/1.1" 200 5753
+C:\codigos\test\Django\myproject\taller\models.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+August 03, 2026 - 10:18:38
+Django version 6.0.7, using settings 'myproject.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+Watching for file changes with StatReloader
+C:\codigos\test\Django\myproject\taller\models.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+August 03, 2026 - 10:26:09
+Django version 6.0.7, using settings 'myproject.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+Watching for file changes with StatReloader
+C:\codigos\test\Django\myproject\myproject\views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+August 03, 2026 - 10:26:14
+Django version 6.0.7, using settings 'myproject.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+Watching for file changes with StatReloader
+C:\codigos\test\Django\myproject\myproject\views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+August 03, 2026 - 10:26:32
+Django version 6.0.7, using settings 'myproject.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+Watching for file changes with StatReloader
+C:\codigos\test\Django\myproject\taller\views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+August 03, 2026 - 10:26:35
+Django version 6.0.7, using settings 'myproject.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+Watching for file changes with StatReloader
+C:\codigos\test\Django\myproject\taller\views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+August 03, 2026 - 10:26:53
+Django version 6.0.7, using settings 'myproject.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+Watching for file changes with StatReloader
+[03/Aug/2026 10:27:00] "POST /registro/ HTTP/1.1" 302 0
+[03/Aug/2026 10:27:00] "GET / HTTP/1.1" 200 4023
+[03/Aug/2026 10:27:05] "POST / HTTP/1.1" 200 4033
+C:\codigos\test\Django\myproject\taller\views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+August 03, 2026 - 10:26:59
+Django version 6.0.7, using settings 'myproject.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+Watching for file changes with StatReloader
+C:\codigos\test\Django\myproject\taller\urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+August 03, 2026 - 10:27:07
+Django version 6.0.7, using settings 'myproject.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+Watching for file changes with StatReloader
+[03/Aug/2026 10:27:22] "POST / HTTP/1.1" 302 0
+[03/Aug/2026 10:27:22] "GET /taller/ HTTP/1.1" 200 5329
+[03/Aug/2026 10:27:25] "GET /taller/solicitudes/ HTTP/1.1" 200 6346
+Internal Server Error: /taller/solicitudes/empleo/1/aprobar/
+Traceback (most recent call last):
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\django\db\models\query.py", line 987, in get_or_create
+    return self.get(**kwargs), False
+           ~~~~~~~~^^^^^^^^^^
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\django\db\models\query.py", line 639, in get
+    raise self.model.DoesNotExist(
+        "%s matching query does not exist." % self.model._meta.object_name
+    )
+taller.models.Empleado.DoesNotExist: Empleado matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\django\db\backends\mysql\base.py", line 78, in execute
+    return self.cursor.execute(query, args)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+    ~~~~~~~~^^^
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\MySQLdb\connections.py", line 286, in query
+    _mysql.connection.query(self, query)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+MySQLdb.IntegrityError: (1451, 'Cannot delete or update a parent row: a foreign key constraint fails (`taller_django`.`solicitudes_empleo`, CONSTRAINT `solicitudes_empleo_ibfk_1` FOREIGN KEY (`username`) REFERENCES `personas` (`username`))')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\codigos\test\Django\myproject\taller\views.py", line 14, in wrapper
+    return view(request, *args, **kwargs)
+  File "C:\codigos\test\Django\myproject\taller\views.py", line 144, in aprobar_solicitud
+    Empleado.objects.get_or_create(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        persona_ptr_id=persona.id,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+        defaults={"especialidad": solicitud.especialidad},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\django\db\models\query.py", line 994, in get_or_create
+    return self.create(**params), True
+           ~~~~~~~~~~~^^^^^^^^^^
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\django\db\models\query.py", line 669, in create
+    obj.save(force_insert=True, using=self.db)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\django\db\models\base.py", line 874, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\django\db\models\base.py", line 963, in save_base
+    parent_inserted = self._save_parents(
+        cls, using, update_fields, force_insert
+    )
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\django\db\models\base.py", line 1016, in _save_parents
+    updated = self._save_table(
+        cls=parent,
+    ...<2 lines>...
+        force_insert=parent_inserted or issubclass(parent, force_insert),
+    )
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\django\db\models\base.py", line 1110, in _save_table
+    results = self._do_update(
+        base_qs,
+    ...<5 lines>...
+        returning_fields,
+    )
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\django\db\models\base.py", line 1213, in _do_update
+    return filtered._update(values, returning_fields)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\django\db\models\query.py", line 1327, in _update
+    return query.get_compiler(self.db).execute_returning_sql(returning_fields)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\django\db\models\sql\compiler.py", line 2140, in execute_returning_sql
+    row_count = self.execute_sql(ROW_COUNT)
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\django\db\models\sql\compiler.py", line 2111, in execute_sql
+    row_count = super().execute_sql(result_type)
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\django\db\models\sql\compiler.py", line 1624, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\django\db\utils.py", line 94, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\django\db\backends\mysql\base.py", line 78, in execute
+    return self.cursor.execute(query, args)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+    ~~~~~~~~^^^
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\MySQLdb\connections.py", line 286, in query
+    _mysql.connection.query(self, query)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+django.db.utils.IntegrityError: (1451, 'Cannot delete or update a parent row: a foreign key constraint fails (`taller_django`.`solicitudes_empleo`, CONSTRAINT `solicitudes_empleo_ibfk_1` FOREIGN KEY (`username`) REFERENCES `personas` (`username`))')
+[03/Aug/2026 10:27:28] "POST /taller/solicitudes/empleo/1/aprobar/ HTTP/1.1" 500 211532
+Internal Server Error: /taller/solicitudes/empleo/1/aprobar/
+Traceback (most recent call last):
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\django\db\models\query.py", line 987, in get_or_create
+    return self.get(**kwargs), False
+           ~~~~~~~~^^^^^^^^^^
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\django\db\models\query.py", line 639, in get
+    raise self.model.DoesNotExist(
+        "%s matching query does not exist." % self.model._meta.object_name
+    )
+taller.models.Empleado.DoesNotExist: Empleado matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\django\db\backends\mysql\base.py", line 78, in execute
+    return self.cursor.execute(query, args)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+    ~~~~~~~~^^^
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\MySQLdb\connections.py", line 286, in query
+    _mysql.connection.query(self, query)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+MySQLdb.IntegrityError: (1451, 'Cannot delete or update a parent row: a foreign key constraint fails (`taller_django`.`solicitudes_empleo`, CONSTRAINT `solicitudes_empleo_ibfk_1` FOREIGN KEY (`username`) REFERENCES `personas` (`username`))')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\codigos\test\Django\myproject\taller\views.py", line 14, in wrapper
+    return view(request, *args, **kwargs)
+  File "C:\codigos\test\Django\myproject\taller\views.py", line 144, in aprobar_solicitud
+    Empleado.objects.get_or_create(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        persona_ptr_id=persona.id,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+        defaults={"especialidad": solicitud.especialidad},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\django\db\models\query.py", line 994, in get_or_create
+    return self.create(**params), True
+           ~~~~~~~~~~~^^^^^^^^^^
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\django\db\models\query.py", line 669, in create
+    obj.save(force_insert=True, using=self.db)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\django\db\models\base.py", line 874, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\django\db\models\base.py", line 963, in save_base
+    parent_inserted = self._save_parents(
+        cls, using, update_fields, force_insert
+    )
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\django\db\models\base.py", line 1016, in _save_parents
+    updated = self._save_table(
+        cls=parent,
+    ...<2 lines>...
+        force_insert=parent_inserted or issubclass(parent, force_insert),
+    )
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\django\db\models\base.py", line 1110, in _save_table
+    results = self._do_update(
+        base_qs,
+    ...<5 lines>...
+        returning_fields,
+    )
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\django\db\models\base.py", line 1213, in _do_update
+    return filtered._update(values, returning_fields)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\django\db\models\query.py", line 1327, in _update
+    return query.get_compiler(self.db).execute_returning_sql(returning_fields)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\django\db\models\sql\compiler.py", line 2140, in execute_returning_sql
+    row_count = self.execute_sql(ROW_COUNT)
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\django\db\models\sql\compiler.py", line 2111, in execute_sql
+    row_count = super().execute_sql(result_type)
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\django\db\models\sql\compiler.py", line 1624, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\django\db\utils.py", line 94, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\django\db\backends\mysql\base.py", line 78, in execute
+    return self.cursor.execute(query, args)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+    ~~~~~~~~^^^
+  File "C:\codigos\test\Django\pro3\Lib\site-packages\MySQLdb\connections.py", line 286, in query
+    _mysql.connection.query(self, query)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+django.db.utils.IntegrityError: (1451, 'Cannot delete or update a parent row: a foreign key constraint fails (`taller_django`.`solicitudes_empleo`, CONSTRAINT `solicitudes_empleo_ibfk_1` FOREIGN KEY (`username`) REFERENCES `personas` (`username`))')
+[03/Aug/2026 10:27:33] "POST /taller/solicitudes/empleo/1/aprobar/ HTTP/1.1" 500 211532
+[03/Aug/2026 10:27:38] "POST /taller/solicitudes/empleo/1/rechazar/ HTTP/1.1" 302 0
+[03/Aug/2026 10:27:38] "GET /taller/solicitudes/ HTTP/1.1" 200 5817
+[03/Aug/2026 10:27:59] "GET /logout/ HTTP/1.1" 302 0
+[03/Aug/2026 10:27:59] "GET / HTTP/1.1" 200 3798
+[03/Aug/2026 10:28:01] "GET /registro/ HTTP/1.1" 200 5753
+[03/Aug/2026 10:28:08] "POST / HTTP/1.1" 200 4016
+C:\codigos\test\Django\myproject\taller\views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+August 03, 2026 - 10:27:12
+Django version 6.0.7, using settings 'myproject.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+Watching for file changes with StatReloader
+C:\codigos\test\Django\myproject\taller\views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+August 03, 2026 - 10:29:21
+Django version 6.0.7, using settings 'myproject.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+Watching for file changes with StatReloader
+C:\codigos\test\Django\myproject\myproject\views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+August 03, 2026 - 10:29:28
+Django version 6.0.7, using settings 'myproject.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+Watching for file changes with StatReloader
+[03/Aug/2026 10:50:48] "POST / HTTP/1.1" 200 5539
+[03/Aug/2026 10:51:02] "POST /reenviar-solicitud/ HTTP/1.1" 302 0
+[03/Aug/2026 10:51:03] "GET / HTTP/1.1" 200 4049
+[03/Aug/2026 10:51:16] "POST / HTTP/1.1" 302 0
+[03/Aug/2026 10:51:16] "GET /taller/ HTTP/1.1" 200 5338
+[03/Aug/2026 10:51:18] "GET /taller/solicitudes/ HTTP/1.1" 200 6355
+[03/Aug/2026 10:51:19] "POST /taller/solicitudes/empleo/1/aprobar/ HTTP/1.1" 302 0
+[03/Aug/2026 10:51:19] "GET /taller/solicitudes/ HTTP/1.1" 200 5817
+[03/Aug/2026 10:51:22] "GET /logout/ HTTP/1.1" 302 0
+[03/Aug/2026 10:51:22] "GET / HTTP/1.1" 200 3807
+[03/Aug/2026 10:51:27] "POST / HTTP/1.1" 302 0
+[03/Aug/2026 10:51:27] "GET /taller/panel-empleado/ HTTP/1.1" 200 5191
+[03/Aug/2026 10:51:31] "GET /logout/ HTTP/1.1" 302 0
+[03/Aug/2026 10:51:31] "GET / HTTP/1.1" 200 3807
+[03/Aug/2026 10:51:44] "POST / HTTP/1.1" 200 4022
+[03/Aug/2026 10:51:56] "GET /registro/ HTTP/1.1" 200 5753
+[03/Aug/2026 10:52:43] "GET / HTTP/1.1" 200 3807
+[03/Aug/2026 10:52:51] "POST / HTTP/1.1" 302 0
+[03/Aug/2026 10:52:51] "GET /taller/panel-cliente/ HTTP/1.1" 200 7980
+[03/Aug/2026 10:55:05] "GET /taller/panel-cliente/ HTTP/1.1" 200 11182
+[03/Aug/2026 10:55:56] "POST /taller/agregar-vehiculo/ HTTP/1.1" 302 0
+[03/Aug/2026 10:55:57] "GET /taller/panel-cliente/ HTTP/1.1" 200 11474
+[03/Aug/2026 10:56:50] "POST /taller/enviar-solicitud/ HTTP/1.1" 302 0
+[03/Aug/2026 10:56:50] "GET /taller/panel-cliente/ HTTP/1.1" 200 11483
+[03/Aug/2026 10:56:57] "GET /logout/ HTTP/1.1" 302 0
+[03/Aug/2026 10:56:57] "GET / HTTP/1.1" 200 3807
+[03/Aug/2026 10:57:11] "POST / HTTP/1.1" 302 0
+[03/Aug/2026 10:57:11] "GET /taller/ HTTP/1.1" 200 5338
+[03/Aug/2026 10:57:13] "GET /taller/solicitudes-taller/ HTTP/1.1" 200 5567
+[03/Aug/2026 10:57:17] "GET /taller/solicitudes/ HTTP/1.1" 200 5624
+[03/Aug/2026 10:57:18] "GET /taller/solicitudes-taller/ HTTP/1.1" 200 5567
+[03/Aug/2026 10:57:19] "GET /taller/ordenes/ HTTP/1.1" 200 5274
+[03/Aug/2026 10:57:19] "GET /taller/empleados/ HTTP/1.1" 200 5362
+[03/Aug/2026 10:57:21] "GET /taller/solicitudes-taller/ HTTP/1.1" 200 5567
+[03/Aug/2026 10:57:50] "GET /logout/ HTTP/1.1" 302 0
+[03/Aug/2026 10:57:50] "GET / HTTP/1.1" 200 3807
+[03/Aug/2026 10:57:55] "POST / HTTP/1.1" 302 0
+[03/Aug/2026 10:57:55] "GET /taller/panel-empleado/ HTTP/1.1" 200 5191
+[03/Aug/2026 10:57:57] "GET /logout/ HTTP/1.1" 302 0
+[03/Aug/2026 10:57:57] "GET / HTTP/1.1" 200 3807
+C:\codigos\test\Django\myproject\taller\models.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+August 03, 2026 - 10:33:42
+Django version 6.0.7, using settings 'myproject.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+Watching for file changes with StatReloader
+C:\codigos\test\Django\myproject\taller\views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+August 03, 2026 - 10:58:32
+Django version 6.0.7, using settings 'myproject.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+Watching for file changes with StatReloader
+C:\codigos\test\Django\myproject\taller\views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+August 03, 2026 - 10:58:45
+Django version 6.0.7, using settings 'myproject.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+Watching for file changes with StatReloader
+C:\codigos\test\Django\myproject\taller\views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+August 03, 2026 - 10:58:52
+Django version 6.0.7, using settings 'myproject.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+Watching for file changes with StatReloader
+[03/Aug/2026 10:59:12] "GET /taller/solicitudes-taller/ HTTP/1.1" 200 5567
+C:\codigos\test\Django\myproject\taller\urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+August 03, 2026 - 10:59:12
+Django version 6.0.7, using settings 'myproject.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+Watching for file changes with StatReloader
+C:\codigos\test\Django\myproject\taller\views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+August 03, 2026 - 10:59:16
+Django version 6.0.7, using settings 'myproject.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+Watching for file changes with StatReloader
+C:\codigos\test\Django\myproject\taller\views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+August 03, 2026 - 10:59:59
+Django version 6.0.7, using settings 'myproject.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+Watching for file changes with StatReloader
+[03/Aug/2026 11:02:20] "GET /taller/vehiculos/ HTTP/1.1" 200 5584
+[03/Aug/2026 11:02:21] "GET /taller/ordenes/ HTTP/1.1" 200 5740
+[03/Aug/2026 11:02:22] "GET /taller/empleados/ HTTP/1.1" 200 5531
+[03/Aug/2026 11:02:22] "GET /taller/ordenes/ HTTP/1.1" 200 5740
+[03/Aug/2026 11:02:24] "GET /taller/empleados/ HTTP/1.1" 200 5531
+[03/Aug/2026 11:02:26] "GET /taller/solicitudes/ HTTP/1.1" 200 5793
+[03/Aug/2026 11:02:27] "GET /taller/solicitudes-taller/ HTTP/1.1" 200 6671
+[03/Aug/2026 11:02:31] "POST /taller/solicitudes-taller/2/asignar/ HTTP/1.1" 302 0
+[03/Aug/2026 11:02:31] "GET /taller/solicitudes-taller/ HTTP/1.1" 200 6229
+[03/Aug/2026 11:02:33] "GET /logout/ HTTP/1.1" 302 0
+[03/Aug/2026 11:02:33] "GET / HTTP/1.1" 200 3807
+[03/Aug/2026 11:02:37] "POST / HTTP/1.1" 302 0
+[03/Aug/2026 11:02:37] "GET /taller/panel-empleado/ HTTP/1.1" 200 6882
+[03/Aug/2026 11:02:44] "POST /taller/solicitudes/2/aceptar/ HTTP/1.1" 302 0
+[03/Aug/2026 11:02:44] "GET /taller/panel-empleado/ HTTP/1.1" 200 6613
+[03/Aug/2026 11:02:48] "GET /logout/ HTTP/1.1" 302 0
+[03/Aug/2026 11:02:48] "GET / HTTP/1.1" 200 3807
+[03/Aug/2026 11:02:54] "POST / HTTP/1.1" 302 0
+[03/Aug/2026 11:02:54] "GET /taller/panel-cliente/ HTTP/1.1" 200 11686
+[03/Aug/2026 11:03:03] "POST /taller/enviar-solicitud/ HTTP/1.1" 302 0
+[03/Aug/2026 11:03:03] "GET /taller/panel-cliente/ HTTP/1.1" 200 11881
+[03/Aug/2026 11:03:07] "GET /logout/ HTTP/1.1" 302 0
+[03/Aug/2026 11:03:07] "GET / HTTP/1.1" 200 3807
+[03/Aug/2026 11:03:25] "POST / HTTP/1.1" 302 0
+[03/Aug/2026 11:03:25] "GET /taller/ HTTP/1.1" 200 6697
+[03/Aug/2026 11:03:29] "GET /taller/solicitudes-taller/ HTTP/1.1" 200 7257
+[03/Aug/2026 11:03:32] "POST /taller/solicitudes-taller/3/asignar/ HTTP/1.1" 302 0
+[03/Aug/2026 11:03:32] "GET /taller/solicitudes-taller/ HTTP/1.1" 200 6815
+[03/Aug/2026 11:03:34] "GET /logout/ HTTP/1.1" 302 0
+[03/Aug/2026 11:03:34] "GET / HTTP/1.1" 200 3807
+[03/Aug/2026 11:03:38] "POST / HTTP/1.1" 302 0
+[03/Aug/2026 11:03:38] "GET /taller/panel-empleado/ HTTP/1.1" 200 7201
+[03/Aug/2026 11:03:44] "POST /taller/solicitudes/3/aceptar/ HTTP/1.1" 302 0
+[03/Aug/2026 11:03:44] "GET /taller/panel-empleado/ HTTP/1.1" 200 6932
+[03/Aug/2026 11:03:57] "GET /logout/ HTTP/1.1" 302 0
+[03/Aug/2026 11:03:57] "GET / HTTP/1.1" 200 3807

@@ -1,0 +1,3 @@
+Watching for file changes with StatReloader
+[03/Aug/2026 09:05:32] "GET /registro/ HTTP/1.1" 200 3795
+[03/Aug/2026 09:05:33] "GET / HTTP/1.1" 200 3798

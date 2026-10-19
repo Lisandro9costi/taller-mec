@@ -1,0 +1,52 @@
+{% extends "base_taller.html" %}
+{% block title %}Solicitudes de Empleo - Taller Mecanico{% endblock %}
+{% block content %}
+<div class="section-title">Solicitudes de empleo</div>
+<table>
+    <thead>
+        <tr>
+            <th>Usuario</th>
+            <th>Nombre</th>
+            <th>Especialidad</th>
+            <th>Estado</th>
+            <th>Fecha</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for s in solicitudes %}
+        <tr>
+            <td><strong>{{ s.username.username }}</strong></td>
+            <td>{{ s.username.nombre }} {{ s.username.apellido }}</td>
+            <td>{{ s.especialidad|default:"&mdash;" }}</td>
+            <td>
+                {% if s.estado == "aprobado" %}
+                <span class="badge badge-green">{{ s.estado }}</span>
+                {% elif s.estado == "rechazado" %}
+                <span class="badge badge-red">{{ s.estado }}</span>
+                {% else %}
+                <span class="badge badge-yellow">{{ s.estado }}</span>
+                {% endif %}
+            </td>
+            <td>{{ s.fecha_creacion|date:"d/m/Y" }}</td>
+            <td>
+                {% if s.estado == "pendiente" %}
+                <form method="post" action="{% url 'taller:aprobar_solicitud' s.id %}" class="inline-form">
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-sm btn-green">Aprobar</button>
+                </form>
+                <form method="post" action="{% url 'taller:rechazar_solicitud' s.id %}" class="inline-form">
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-sm btn-red">Rechazar</button>
+                </form>
+                {% else %}
+                &mdash;
+                {% endif %}
+            </td>
+        </tr>
+        {% empty %}
+        <tr><td colspan="6" class="empty">No hay solicitudes de empleo.</td></tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
